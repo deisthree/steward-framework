@@ -46,7 +46,7 @@ func RunLoop(
 			switch evt.Type {
 			case watch.Added:
 				if err := handleAddServiceBroker(ctx, cataloger, updateFn, createSvcClassFunc, evt); err != nil {
-					// TODO: try the handler again. See https://github.com/deis/steward-framework/issues/26
+					// TODO: try the handler again. See https://github.com/deisthree/steward-framework/issues/26
 					logger.Errorf("add service broker event handler failed (%s)", err)
 				}
 			}

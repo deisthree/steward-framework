@@ -73,8 +73,8 @@ func StartControlLoops(
 		// TODO: remove the hard-coded "default" namespace and instead watch all namespaces and be able
 		// to create secrets in any given namespace.
 		//
-		// See https://github.com/deis/steward-framework/issues/30 and
-		// https://github.com/deis/steward-framework/issues/29 for details on how to resolve
+		// See https://github.com/deisthree/steward-framework/issues/30 and
+		// https://github.com/deisthree/steward-framework/issues/29 for details on how to resolve
 		secretWriterFunc := servicebinding.NewK8sSecretWriterFunc(k8sClient.Core().Secrets("default"))
 		if err := servicebinding.RunLoop(
 			ctx,

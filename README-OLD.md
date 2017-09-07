@@ -81,7 +81,7 @@ Utilizing the Steward Framework to implement your own service catalog controller
 
 ## Example code
 
-The following annotated example is adapted from [steward-cf](https://github.com/deis/steward-cf):
+The following annotated example is adapted from [steward-cf](https://github.com/deisthree/steward-cf):
 
 ```go
 import "github.com/deis/steward-framework/runner"

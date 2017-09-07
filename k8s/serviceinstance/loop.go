@@ -28,7 +28,7 @@ func RunLoop(
 	lifecycler framework.Lifecycler,
 ) error {
 	// TODO: We should watch ALL namespaces; this is temporary.
-	// See https://github.com/deis/steward-framework/issues/29
+	// See https://github.com/deisthree/steward-framework/issues/29
 	watcher, err := watchFn("default")
 	if err != nil {
 		return err
@@ -60,7 +60,7 @@ func RunLoop(
 					evt,
 				); err != nil {
 					// TODO: try the handler again.
-					// See https://github.com/deis/steward-framework/issues/26
+					// See https://github.com/deisthree/steward-framework/issues/26
 					logger.Errorf("add service instance event handler failed (%s)", err)
 				}
 			case watch.Deleted:
@@ -72,7 +72,7 @@ func RunLoop(
 					evt,
 				); err != nil {
 					// TODO: try the handler again.
-					// See https://github.com/deis/steward-framework/issues/26
+					// See https://github.com/deisthree/steward-framework/issues/26
 					logger.Errorf("delete service instance event handler failed (%s)", err)
 				}
 			}

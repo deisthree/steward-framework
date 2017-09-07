@@ -20,7 +20,7 @@ var (
 
 // RunLoop starts a blocking control loop that watches and takes action on serviceBroker resources.
 //
-// TODO: remove the namespace param. See https://github.com/deis/steward-framework/issues/30
+// TODO: remove the namespace param. See https://github.com/deisthree/steward-framework/issues/30
 func RunLoop(
 	ctx context.Context,
 	namespace string,
@@ -65,7 +65,7 @@ func RunLoop(
 					getSvcInstanceFn,
 					evt,
 				); err != nil {
-					// TODO: try the handler again. See https://github.com/deis/steward-framework/issues/34
+					// TODO: try the handler again. See https://github.com/deisthree/steward-framework/issues/34
 					logger.Errorf("add service binding event handler failed (%s)", err)
 				}
 			}
